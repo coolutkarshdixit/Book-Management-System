@@ -1,0 +1,25 @@
+{% extends 'baseuser.html' %}
+
+{% block userpage %}
+<h1>User Profile</h1>
+{{msg}}
+<center>
+    <table border=1>
+        <tr>
+            <th>First name</th>
+            <td><input type="text" name="bid" readonly value={{data.first_name}}/></td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><input type ="text" name="bname" readonly value={{data.last_name}} /></td>
+        </tr> 
+        <tr>
+            <th>User Name</th>
+            <td><input type ="text" name="publication" readonly value={{data.username}} /></td>
+        </tr>  
+       
+         
+    </table>  
+</center>
+   
+{% endblock userpage %}

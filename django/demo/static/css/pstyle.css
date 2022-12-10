@@ -1,0 +1,68 @@
+#header
+{
+    background-color: brown;
+    color: black;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+#footer
+{
+    background-color: brown;
+    color: black;
+    height: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+#content
+{
+    background-color: aqua;
+    color: black;
+    height: 70%;
+    width: 100%;
+}
+
+#leftbar
+{
+    background-color: aqua;
+    color: black;
+    height: 100%;
+    width: 30%;
+    float: left;
+
+}
+
+#Rightbar
+{
+    background-color: blanchedalmond;
+    color: black;
+    height: 100%;
+    width: 70%;
+    float: right;
+}
+
+#Menubar
+{
+    background-color: aqua;
+    color: black;
+    text-align: center;
+}
+
+#Menubar li
+{
+    display: flow-root;
+    padding: 10px;
+    margin: 10px;
+    
+    background-color: cadetblue;
+}
+
+#Menubar li a
+{
+    font-size: 15px;
+    color: crimson;
+    text-decoration: none;
+    text-transform: capitalize;
+}

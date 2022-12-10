@@ -1,0 +1,38 @@
+{% extends 'baseuser.html' %}
+
+{% block userpage %}
+<h1>Update Book</h1>
+{{msg}}
+<form action="updatebook" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="uid" value="{{data.sn}}" required />
+<center>
+    <table border=1>
+        <tr>
+            <th>Book ID</th>
+            <td><input type="text" name="bid" value="{{data.bid}}" required /></td>
+        </tr>
+        <tr>
+            <th>Book Name</th>
+            <td><input type ="text" name="bname" value="{{data.bname}}" required /></td>
+        </tr> 
+        <tr>
+            <th>Publication</th>
+            <td><input type ="text" name="publication" value="{{data.publication}}" required /></td>
+        </tr>  
+        <tr>
+            <th>Author</th>
+            <td><input type ="text" name="author" value="{{data.author}}" required /></td>
+        </tr>   
+        <tr>
+            <th>Book Category</th>
+            <td><input type ="text" name="bcat" value="{{data.bcat}}" required /></td>
+        </tr> 
+        <tr>
+            <th></th>
+            <td><input type ="submit" value="UPDATE Book" required /></td>
+        </tr> 
+    </table>  
+</center>
+</form>     
+{% endblock userpage %}

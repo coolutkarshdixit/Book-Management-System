@@ -1,0 +1,32 @@
+{% extends 'baseuser.html' %}
+
+{% block userpage %}
+<h1>Search Record</h1>
+{{msg}}
+<center>
+    <table border=1>
+        <tr>
+            <th>Book ID</th>
+            <td><input type="text" name="bid" readonly value={{data.bid}}/></td>
+        </tr>
+        <tr>
+            <th>Book Name</th>
+            <td><input type ="text" name="bname" readonly value={{data.bname}} /></td>
+        </tr> 
+        <tr>
+            <th>Publication</th>
+            <td><input type ="text" name="publication" readonly value={{data.publication}} /></td>
+        </tr>  
+        <tr>
+            <th>Author</th>
+            <td><input type ="text" name="author" readonly value={{data.author}} /></td>
+        </tr>   
+        <tr>
+            <th>Book Category</th>
+            <td><input type ="text" name="bcat" readonly value={{data.bcat}} /></td>
+        </tr> 
+         
+    </table>  
+</center>
+   
+{% endblock userpage %}

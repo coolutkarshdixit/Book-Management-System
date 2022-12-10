@@ -1,0 +1,80 @@
+#header
+{
+    height: 25%;
+    background-color: aqua;
+    color: black;
+    font-size: 20pt;
+    text-align: center;
+}
+#footer
+{
+    height: 5%;
+    background-color: aqua;
+    color: black;
+
+    text-align: center;
+}
+#content
+{
+    height: 70%;
+}
+#leftbar
+{
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color: bisque;
+}
+#rightbar
+{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: chartreuse;
+}
+
+#menubar
+{
+    list-style-type: none;
+    background-color: blueviolet;
+    text-align: right;
+}
+#menubar li{
+    display: inline;
+    margin: 20px;
+    background-color: chartreuse;
+    padding: 10px;
+}
+#menubar li a{
+    font-size:15pt;
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#loginbar
+{
+    margin-top: 3%;
+    width: 60%;
+    background-color: aqua;
+    padding: 15px;;
+}
+#loginbar legend
+{
+    background-color: bisque;
+    color: black;
+    font-size: 15pt;
+    padding: 10px;
+}
+
+
+#loginbar table
+{
+    background-color: yellow;
+    padding: 10px;
+}
+
+#loginbar table tr th
+{
+    color: red;
+    font-size: 15pt;
+}

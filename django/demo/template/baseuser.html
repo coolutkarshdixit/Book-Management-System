@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>KVCH NOIDA</title>
+        <link rel="stylesheet" href="static/css/pstyle.css">
+    </head>
+    <body>
+        <div>
+            <div id="Header"><h1>{{user.first_name}} {{user.last_name}}</h1></div>
+            <div id="Content">
+                <div id="leftbar">
+                    <ul id="menubar">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="userprofile">PROFILE</a></li>
+                        <li><a href="addbook">ADD BOOK</a></li>
+                        <li><a href="searchbook">SEARCH BOOK</a></li>
+                        <li><a href="managebook">MANAGE BOOK</a></li>
+                        <li><a href="changepassword">CHANGE PASSWORD</a></li>
+                        <li><a href="logout">LOGOUT</a></li>
+
+                    </ul>
+                </div>
+                <div id="Rightbar">{% block userpage %}{% endblock userpage %}</div>
+            </div>
+            <div id="footer">Footer</div>
+            
+        </div>
+    </body>
+</html>

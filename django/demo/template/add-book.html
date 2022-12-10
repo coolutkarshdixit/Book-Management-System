@@ -1,0 +1,37 @@
+{% extends 'baseuser.html' %}
+
+{% block userpage %}
+<h1>Add Book</h1>
+{{msg}}
+<form action="bookadded" method="post">
+    {% csrf_token %}
+<center>
+    <table border=1>
+        <tr>
+            <th>Book ID</th>
+            <td><input type="text" name="bid" required /></td>
+        </tr>
+        <tr>
+            <th>Book Name</th>
+            <td><input type ="text" name="bname" required /></td>
+        </tr> 
+        <tr>
+            <th>Publication</th>
+            <td><input type ="text" name="publication" required /></td>
+        </tr>  
+        <tr>
+            <th>Author</th>
+            <td><input type ="text" name="author" required /></td>
+        </tr>   
+        <tr>
+            <th>Book Category</th>
+            <td><input type ="text" name="bcat" required /></td>
+        </tr> 
+        <tr>
+            <th></th>
+            <td><input type ="submit" value="Add Book" required /></td>
+        </tr> 
+    </table>  
+</center>
+</form>     
+{% endblock userpage %}

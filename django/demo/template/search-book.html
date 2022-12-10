@@ -1,0 +1,22 @@
+{% extends 'baseuser.html' %}
+
+{% block userpage %}
+<h1>Add Book</h1>
+{{msg}}
+<form action="searchrecord" method="post">
+    {% csrf_token %}
+<center>
+    <table border=1>
+        <tr>
+            <th>Book ID</th>
+            <td><input type="text" name="bid" required /></td>
+        </tr>
+        
+        <tr>
+            <th></th>
+            <td><input type ="submit" value="Search Book" required /></td>
+        </tr> 
+    </table>  
+</center>
+</form>     
+{% endblock userpage %}
